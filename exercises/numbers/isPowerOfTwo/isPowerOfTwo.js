@@ -18,14 +18,26 @@
  * @param {number} b - The base
  * @returns {boolean} True if the number is a power of the base, false otherwise.
  */
-function isPowerOfTwo(num) {
-  // Your code here
-  // Remember, you can assume that num is a positive integer.
+function isPowerOfTwo(num){
+  let answer=1;
+  for (b=1; answer<num; b++) {
+    answer= answer*2;
+  
+  }
+     
+  if (answer=== num){
+    return true;
+  } 
+  
+  else {
+    return false;
+  }
 }
-
 if (require.main === module) {
   console.log('Running sanity checks for isPowerOfTwo:');
-
+console.log(isPowerOfTwo(8)===true);
+console.log(isPowerOfTwo(10)===false);
+console.log(isPowerOfTwo(4096)===true);
   // Your sanity checks here.
 }
 
