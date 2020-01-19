@@ -21,12 +21,39 @@
  * @param {number} n - A non-negative integer
  * @returns {number} The fibonacci of num
  */
-function fibonacci(n) {
-  // This is your job. :)
+
+// it doesn't really work but I tried it so I uploaded it anyways. :) 
+ function fibonacci(n) {
+  let nums=[];
+
+  for (let a=0; a<=n; a++){
+    
+    if (a=0){
+      nums.push(0);
+    console.log('1');
+    } else if (a=1){
+    nums.push(1);
+    console.log('2');
+
+  } else {
+    let aMinusOne= a-1;
+    let aMinusTwo = a-2;
+    nums.push(`${nums[aMinusOne]}` + `${nums[aMinusTwo]}`);
+  }
+}
+let nMinusOne= n-1;
+let nMinusTwo = n-2;
+  let answer = `${nums[nMinusOne]}` +  `${nums[nMinusTwo]}`;
+return answer;
+
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for fibonacci:');
+console.log(fibonacci(0));
+console.log(fibonacci(1));
+console.log(fibonacci(10));
+console.log(fibonacci(12));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
