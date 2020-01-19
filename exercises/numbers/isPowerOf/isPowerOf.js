@@ -20,21 +20,30 @@
  */
 
 function isPowerOf(num, base){
-  if (num % base !==0){
-    return false;
-  } else { 
+  let answer=1;
+  for (b=1; answer<num; b++) {
+    answer= answer*base;
+  
+  }
+     
+  if (answer=== num){
     return true;
   } 
+  
+  else {
+    return false;
+  }
 }
+  
 if (require.main === module) {
   console.log('Running sanity checks for isPowerOf:');
 
   // Is 0 a power of two? Is 1?
   
-
   console.log(isPowerOf(8,2) === true);
   console.log(isPowerOf(10,3) === false);
   console.log(isPowerOf(16,4) === true);
+  console.log(isPowerOf(20,4)=== false);
 }
 
 module.exports = isPowerOf;
