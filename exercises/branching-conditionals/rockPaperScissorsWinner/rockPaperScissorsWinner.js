@@ -24,15 +24,25 @@
  * @returns {string} Returns 'win', 'lose', or 'draw' depending on
  *  whether the first player won, lost, or drew the match.
  */
-function rockPaperScissorsWinner(array) {
-  // This is your job. :)
-}
-
+//0=scissor 1=paper 2=rock
+function rockPaperScissorsWinner(a,b) {
+if ((a===0 && b===1)||(a===1 && b===2) || (a===2 && b===0) ){
+  ;
+return 'win';
+} else if (a===b) {
+  return 'draw';
+} else {
+  return 'lose';
+} }
 if (require.main === module) {
   console.log('Running sanity checks for rockPaperScissorsWinner:');
+console.log(rockPaperScissorsWinner(1, 0));
+console.log(rockPaperScissorsWinner(1, 2));
+console.log(rockPaperScissorsWinner(1, 1));
+console.log(rockPaperScissorsWinner(0, 1));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
 
-module.exports = rockPaperScissorsWinner;
+
