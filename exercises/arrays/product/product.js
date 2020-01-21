@@ -9,12 +9,18 @@
  * @returns {number} The product of the numbers in the array
  */
 function product(array) {
-  // This is your job. :)
+  let result=1;
+  for (a=0; a<array.length; a++){
+result=result *array[a];
+  }
+  return result;
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for product:');
-
+console.log(product([2,4,6])===48);
+console.log(product([-10,10])===-100);
+console.log(product([5,2,0])===0);
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
