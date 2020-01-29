@@ -21,7 +21,6 @@
  * @param {number} n - A non-negative integer
  * @returns {number} The fibonacci of num
  */
-
 // it doesn't really work but I tried it so I uploaded it anyways. :) 
  function fibonacci(n) {
   let nums=[];

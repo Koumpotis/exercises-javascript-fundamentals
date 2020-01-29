@@ -27,14 +27,36 @@
  * @param {string} string - The string to replace a character in
  * @returns {string} A lowercase copy of the input string
  */
-
+let alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 function rot13(string) {
-  // This is your job. :)
+  let answer='';
+  let letterPosition;
+    for (let a=0; a<string.length; a++){
+
+      if (string.charCodeAt(a)===32){
+          answer = answer + ' ';
+
+        } else {
+
+          letterPosition= string.charCodeAt(a) - 65 ;
+
+          if (letterPosition+13>26){
+
+            letterPosition =letterPosition +13;
+            answer= answer + alphabet[(letterPosition %13)];
+
+          } else {
+
+            answer= answer + alphabet[letterPosition +13];
+          }
+        }
+    }
+return answer;
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for rot13:');
-
+  console.log(rot13('HELLO WORLD'));
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }

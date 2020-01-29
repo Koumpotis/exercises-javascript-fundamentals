@@ -45,4 +45,4 @@ console.log(rockPaperScissorsWinner(0, 1));
   // How else will you be sure your code does what you think it does?
 }
 
-
+module.exports = rockPaperScissorsWinner;

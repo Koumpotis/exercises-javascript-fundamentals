@@ -55,4 +55,3 @@ console.log(letterGrade(70)==='C-');
 }
 
 module.exports = letterGrade;
-

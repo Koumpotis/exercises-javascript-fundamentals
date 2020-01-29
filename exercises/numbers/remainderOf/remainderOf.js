@@ -15,7 +15,7 @@
  * @param {number} num The input number
  * @returns {boolean} True if num is even and false otherwise
  */
-function remainderOf(num) {
+
   /*
     This is your job. :)
 
@@ -26,6 +26,9 @@ function remainderOf(num) {
 
 if (require.main === module) {
   console.log('Running sanity checks for remainderOf');
+console.log(remainderOf(10,1) === 0);
+console.log(remainderOf(16/4) === 0 );
+console.log(remainderOf(17/4) === 1);
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

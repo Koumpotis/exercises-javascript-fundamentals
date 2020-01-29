@@ -21,6 +21,10 @@ let helpers = require('../printHelpers');
  * @param {number} n - The size of the multiplication table to print
  */
 function printMultiplicationTable(n) {
+  for (let a=1; a<=n; a++){
+  helpers.printCountTimes (a, 1)
+  }
+
   /*
     This is your job. :)
 
@@ -30,7 +34,6 @@ function printMultiplicationTable(n) {
     out how to align the columns.
   */
 
-  helpers.printNewLine();
 }
 
 /**
