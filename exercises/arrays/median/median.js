@@ -19,11 +19,21 @@
  * @returns {number} The median of the numbers in the array
  */
 function median(array) {
-  // This is your job. :)
+  median.sort(function(a, b){return a-b});
+if (array.length % 2===0){
+  medianOf= ((array[(array.length/2)]+array[(array.length/2)-1])/2)
+return medianOf;
+  } else {
+    return array[(array.length-1)/2];
+  }
+
 }
+
 
 if (require.main === module) {
   console.log('Running sanity checks for median:');
+console.log(median([900.10,20]));
+console.log(median([-10.20,400,10]));
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

@@ -39,4 +39,21 @@ console.log(power(4,2));
       console.log(power(5,2) ===25);
         console.log(power(-1, 1) === -1);
         console.log(power(-1, 3) === -1);
+      
+         //Your sanity checks go here
+        // What should happen if base is 0? If exponent is 0?
+      
+      
+      module.exports = power;}
+    
   
+  /*
+    Your code goes here.
+
+    Remember, exponent is a _positive integer_.
+
+    JavaScript has a built-in Math.pow function; don't use it!
+    Write your own version. Remember, exponent is guaranteed to be a positive integer.
+
+    That means you don't have to deal with, e.g., power(2, 1.5).
+  */

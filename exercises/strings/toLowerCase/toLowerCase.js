@@ -14,14 +14,17 @@
  * @param {string} string - The string to replace a character in
  * @returns {string} A lowercase copy of the input string
  */
-
+let upperCase=['A', 'B', 'C',]
 function toLowerCase(string) {
-  // This is your job. :)
-}
+  for (a=0; a<string.length;a++){
+    if (string.charAt(a)==={
+  
 
+  }  
+}
+let array=['this is it'];
 if (require.main === module) {
   console.log('Running sanity checks for toLowerCase:');
-
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }

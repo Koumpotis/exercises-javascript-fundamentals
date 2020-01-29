@@ -25,7 +25,7 @@ if (require.main === module) {
 console.log(sumOfRange(2,6)===20);
 console.log(sumOfRange(3,8)===33);
 console.log(sumOfRange(4,6)===15);
-
+console.log(sumOfRange(-2,4)=== 7);
   // Your sanity checks go here
 }
 

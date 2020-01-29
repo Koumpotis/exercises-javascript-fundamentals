@@ -28,4 +28,3 @@ console.log(capitalize('Faith')==='Faith');
 }
 
 module.exports = capitalize;
-

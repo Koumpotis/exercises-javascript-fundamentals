@@ -11,8 +11,8 @@
  *   letters replaced according to replacementDict
  */
 
-function replaceCharacters(string, replacementDict) {
-  // This is your job. :)
+function replaceCharacters(string, {letter: substitue}) {
+string.split(letter)
 }
 
 if (require.main === module) {
